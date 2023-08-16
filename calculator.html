@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator program</h1>
+    <p id="demo">See result here</p>
+    <script>
+        
+        let num1 = parseFloat(prompt("Enter first number: "));
+        let op = prompt("Enter operator +, -, * or /: ");
+        let num2 = parseFloat(prompt("Enter second number: "));
+        let result;
+        
+
+            if(op == '+'){
+                result = num1 + num2;
+             }
+             else if(op == '-'){
+                result = num1 - num2;
+             }
+             else if(op == '*'){
+                result = num1 * num2;
+             }
+             else if(op == '/'){
+                result = num1 / num2;
+             }
+             else{
+                result = "Invalid operator";
+             }
+            //Print answer here
+             document.getElementById("demo").innerHTML = "= " + result;
+             document.getElementById("demo").style.fontSize = "30px";
+             document.getElementById("demo").style.color = "green";
+
+        
+    </script>
+    
+</body>
+</html>
+
